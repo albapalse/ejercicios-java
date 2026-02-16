@@ -1,6 +1,9 @@
-// Source: Exercism (Java track) — Exercise: Salary Calculator
-// https://exercism.org/tracks/java/exercises/salary-calculator
-// Solution by Alba
+/*  Source: Exercism (Java track) — Exercise: Salary Calculator
+https://exercism.org/tracks/java/exercises/salary-calculator
+Solution by Alba*/
+
+
+package controlflow;
 
 public class SalaryCalculator {
 
@@ -8,8 +11,8 @@ public class SalaryCalculator {
     public static final double MAX_SALARY = 2000.00;
     
     public double salaryMultiplier(int daysSkipped) {
-    double salaryPercentage = daysSkipped >= 5? 0.85: 1.0; 
-    return salaryPercentage;
+        double salaryPercentage = daysSkipped >= 5? 0.85: 1.0; 
+        return salaryPercentage;
     }
 
     public int bonusMultiplier(int productsSold) {
@@ -29,6 +32,13 @@ public class SalaryCalculator {
         
     } 
     
-} 
     
+    public static void main(String[] args) {
+
+        SalaryCalculator test = new SalaryCalculator();
+        System.out.println(test.finalSalary(0, 10)); 
+        System.out.println(test.finalSalary(6, 25)); 
+    }
+
+}
 
